@@ -13,8 +13,11 @@ Change output in the beginning of your rmarkdown file to either
 2. output: 
   html_document:
     keep_md: true
+3. output: 
+  github_document:
+    pandoc_args: --webtex
     
-Choose whichever you like. These will knit a file that ends with ".md" which should be uploaded
+Choose whichever you like, but please note that 2 and 3 require new lines (can't seem to output them here). #3 allows you to output latex code properly while the first two do not. All of these will knit a file that ends with ".md" which should be uploaded
 
 # Uploading figure files
 problem: Figures do not show on GitHub.
